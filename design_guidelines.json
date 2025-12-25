@@ -1,0 +1,134 @@
+{
+  "brand_identity": {
+    "name": "BuildConnect",
+    "tagline": "One Platform. Every Service.",
+    "archetype": "Swiss & High-Contrast (Trust/Clarity) with Organic Accents",
+    "emotional_tone": "Trustworthy, Efficient, Professional, Clean",
+    "theme_strategy": "Light Mode Primary (Hygiene/Openness) with Dark Mode Support"
+  },
+  "typography": {
+    "headings": {
+      "family": "Manrope, sans-serif",
+      "weights": ["600", "700", "800"],
+      "usage": "Use for all section headers, hero titles, and modal titles. Tight tracking (-0.02em)."
+    },
+    "body": {
+      "family": "Inter, sans-serif",
+      "weights": ["400", "500"],
+      "usage": "Use for all paragraph text, inputs, and data tables. Normal tracking."
+    },
+    "mono": {
+      "family": "JetBrains Mono, monospace",
+      "usage": "Use for order IDs, transaction codes, and technical data."
+    }
+  },
+  "colors": {
+    "primary": {
+      "name": "Royal Trust Blue",
+      "hex": "#2563EB",
+      "tailwind": "bg-blue-600",
+      "usage": "Primary buttons, active states, key brand elements."
+    },
+    "secondary": {
+      "name": "Clean Teal",
+      "hex": "#0D9488",
+      "tailwind": "bg-teal-600",
+      "usage": "Success states, 'Verified' badges, sustainability features."
+    },
+    "accent": {
+      "name": "Action Ochre",
+      "hex": "#F59E0B",
+      "tailwind": "bg-amber-500",
+      "usage": "Call-to-actions (secondary), warnings, ratings/stars."
+    },
+    "neutral": {
+      "background": "#FFFFFF",
+      "surface": "#F8FAFC",
+      "border": "#E2E8F0",
+      "text_primary": "#0F172A",
+      "text_secondary": "#64748B"
+    }
+  },
+  "spacing_system": {
+    "base_scale": "4px",
+    "container_padding": "p-6 md:p-12 lg:p-24",
+    "section_gap": "gap-16 md:gap-32",
+    "component_gap": "gap-4 md:gap-8",
+    "rules": "Always use double the standard spacing for marketing sections to create 'breathing room'."
+  },
+  "component_styles": {
+    "buttons": {
+      "primary": "bg-primary text-primary-foreground hover:bg-primary/90 h-11 px-8 rounded-md font-medium transition-all shadow-sm hover:shadow-md",
+      "secondary": "bg-secondary text-secondary-foreground hover:bg-secondary/80 h-11 px-8 rounded-md font-medium",
+      "outline": "border-2 border-input bg-background hover:bg-accent hover:text-accent-foreground h-11 px-8 rounded-md font-medium"
+    },
+    "cards": {
+      "service_card": "bg-card text-card-foreground rounded-xl border border-border/50 shadow-sm hover:shadow-lg hover:-translate-y-1 transition-all duration-300 overflow-hidden",
+      "dashboard_widget": "bg-card text-card-foreground rounded-lg border border-border shadow-none p-6"
+    },
+    "inputs": {
+      "default": "h-11 rounded-md border-input bg-background px-3 py-2 text-sm ring-offset-background file:border-0 file:bg-transparent file:text-sm file:font-medium placeholder:text-muted-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50"
+    }
+  },
+  "layout_strategies": {
+    "marketing_hero": {
+      "type": "Tetris Grid",
+      "classes": "grid grid-cols-1 md:grid-cols-12 gap-8",
+      "description": "Asymmetrical grid. Hero text spans 8 cols, image spans 4 cols (or vice versa). Use negative space."
+    },
+    "dashboard_grid": {
+      "type": "Control Room",
+      "classes": "grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-6",
+      "description": "Dense grid. Widgets fill 100% height. No jagged bottoms."
+    },
+    "booking_flow": {
+      "type": "Centered Focus",
+      "classes": "max-w-2xl mx-auto space-y-8",
+      "description": "Single column, focused task. Progress bar at top. Sticky summary on mobile."
+    }
+  },
+  "visual_enhancers": {
+    "glassmorphism": "backdrop-blur-xl bg-white/70 border border-white/20 shadow-sm",
+    "gradients": "Use subtle mesh gradients for hero backgrounds only. No text gradients.",
+    "shadows": "shadow-[0_8px_30px_rgb(0,0,0,0.04)] for cards. shadow-[0_8px_30px_rgb(0,0,0,0.12)] for floating elements."
+  },
+  "image_assets": {
+    "hero_background": {
+      "url": "https://images.unsplash.com/photo-1758548157747-285c7012db5b",
+      "alt": "Bright modern living room",
+      "category": "marketing"
+    },
+    "service_cleaning": {
+      "url": "https://images.unsplash.com/photo-1719166975779-b7033a7770e0",
+      "alt": "Professional home cleaning context",
+      "category": "service_thumb"
+    },
+    "service_plumbing": {
+      "url": "https://images.unsplash.com/photo-1635221798248-8a3452ad07cd",
+      "alt": "Professional plumber",
+      "category": "service_thumb"
+    },
+    "service_electrician": {
+      "url": "https://images.unsplash.com/photo-1467733238130-bb6846885316",
+      "alt": "Electrical work context",
+      "category": "service_thumb"
+    },
+    "auth_background": {
+      "url": "https://images.unsplash.com/photo-1757262798620-ea10e2edd875",
+      "alt": "Modern kitchen detail",
+      "category": "auth"
+    }
+  },
+  "universal_guidelines": [
+    "Do not use 'Inter' for Headings. Use 'Manrope'.",
+    "Do not use generic teal (#1B93A4). Use the specified 'Clean Teal' (#0D9488).",
+    "Always add 'data-testid' to interactive elements.",
+    "Use 'sonner' for toasts.",
+    "Use 'lucide-react' for icons.",
+    "Marketing pages must use custom HTML/Tailwind layouts, not rigid Shadcn cards.",
+    "Dashboards must use Shadcn components for consistency.",
+    "Ensure 4.5:1 contrast ratio for text.",
+    "Mobile images must not exceed 80vh height."
+  ],
+  "instructions_to_main_agent": "Follow the 'Swiss & High-Contrast' archetype. Prioritize white space and clear typography. Use the provided image URLs for the respective sections. Implement the 'Intent-First' booking flow pattern."
+}
