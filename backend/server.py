@@ -518,9 +518,17 @@ async def shutdown_db_client():
 
 @app.on_event("startup")
 async def startup_seed_data():
+        print("="*80)
+        print("STARTUP SEED DATA FUNCTION CALLED!")
+        print("="*80)
+        logger.info("="*80)
+        logger.info("STARTUP SEED DATA FUNCTION CALLED!")
+        logger.info("="*80)
     # Seed service categories if empty
     count = await db.service_categories.count_documents({})
     if count == 0:
+            print("========== STARTUP EVENT CALLED ==========")
+            logger.info("========== STARTUP EVENT CALLED ==========")
         categories = [
             {
                 "id": str(uuid.uuid4()),
